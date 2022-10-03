@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Five</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <div class="w-full h-screen bg-no-repeat bg-cover" 
+        style="background-image: url('img/png-clipart-world-cup-background-football-stadium-other-sport\ \(1\).png');">
+        <h1 class="pt-56 text-5xl text-white text-center">Choose Your Favourit Five Player</h1>
+        <p class="text-white text-2xl text-center pt-4">Click And Hire Some Awesome Player For Your Club!</p>
+        </div>
+    </header>
+    <main class="mt-12">
+        <section class="w-11/12 mx-auto mt-10 pb-40 grid grid-cols-2 gap-12">
+            <div class="grid grid-cols-3 gap-4 devide-x">
+                <!-- card-1 -->
+                <div>
+                    <div class="card card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img class="w-full h-60" src="img/R (1).png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">David Luiz!</h2>
+                            <p></p>
+                            <div class="card-actions justify-end">
+                                <button onclick="selectFavPlayer(this)" class="btn btn-primary">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-2 -->
+                <div>
+                    <div class="card card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img class="w-full h-60" src="img/R (2).png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 id="player-name" class="card-title">Ronaldo!</h2>
+                            <p></p>
+                            <div class="card-actions justify-end">
+                                <button onclick="selectFavPlayer(this)" class="btn btn-primary">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-3 -->
+                <div>
+                    <div class="card card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img class="w-full h-60" src="img/R (3).png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Mesut Ozil!</h2>
+                            <p></p>
+                            <div class="card-actions justify-end">
+                                <button onclick="selectFavPlayer(this)" class="btn btn-primary">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-4 -->
+                <div>
+                    <div class="card card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img class="w-full h-60" src="img/R (4).png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Hulk!</h2>
+                            <p></p>
+                            <div class="card-actions justify-end">
+                                <button onclick="selectFavPlayer(this)" class="btn btn-primary">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-5 -->
+                <div>
+                    <div class="card card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img class="w-full h-60" src="img/R (5).png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Lionel Messi!</h2>
+                            <p></p>
+                            <div class="card-actions justify-end">
+                                <button onclick="selectFavPlayer(this)" class="btn btn-primary">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-6 -->
+                <div>
+                    <div class="card card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img class="w-full h-60" src="img/R (6).png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Naymar Jr!</h2>
+                            <p></p>
+                            <div class="card-actions justify-end">
+                                <button onclick="selectFavPlayer(this)" class="btn btn-primary">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-7 -->
+                <div>
+                    <div class="card card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img class="w-full h-60" src="img/R (10).png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Mohamed salah!</h2>
+                            <p></p>
+                            <div class="card-actions justify-end">
+                                <button onclick="selectFavPlayer(this)" class="btn btn-primary">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-8 -->
+                <div>
+                    <div class="card card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img class="w-full h-60" src="img/R (11).png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Sadio mane!</h2>
+                            <p></p>
+                            <div class="card-actions justify-end">
+                                <button onclick="selectFavPlayer(this)" class="btn btn-primary">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-9 -->
+                <div>
+                    <div class="card card-compact w-full bg-base-100 shadow-xl">
+                        <figure><img class="w-full h-60" src="img/R (12).png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">CR 7!</h2>
+                            <p></p>
+                            <div class="card-actions justify-end">
+                                <button onclick="selectFavPlayer(this)" class="btn btn-primary">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-rows-2 mx-auto gap-4">
+                <div class="bg-red-200">
+                    <h1 class="text-5xl text-center px-12 mt-8">Selected:<span id="slect-player">0</span></h1>
+                    <div class="overflow-x-auto">
+                        <table class="table table-zebra w-full">
+                            <!-- head -->
+                            <thead>
+                                <tr>
+                                    <th>number</th>
+                                    <th>Name</th>
+                                </tr>
+                            </thead>
+                            <tbody id="players-name">
+                                <tr>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="text-center bg-blue-100 mt-12">
+                    <h1 class="text-5xl mb-8 mt-6">Budget</h1>
+                    <h2 class="text-lg">Per Player : <input id="per-player-cost" class="w-28" type="number"></h2>
+
+                    <button id="totall-player-cost" class="bg-yellow-400 mt-6 px-10 py-3">calculate</button>
+
+                    <h2 class="text-xl mt-6 mb-6">player Expenses : $<span id="total-player-expense">0000</span></h2>
+
+                    <h2 class="text-lg mb-6">Manager : <input id="manager-cost" class="w-28" type="number"></h2>
+
+                    <h2 class="text-lg">Coach : <input id="coach-cost" class="w-28" type="number"></h2>
+
+                    <button id="btn-total-calculate" class="bg-yellow-400 mt-6 px-10 py-3">calculate total</button>
+
+                    <h1 class="text-3xl mt-6 mb-6">totall  :     $<span id="all-cost">00000</span></h1>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="js/callculate.js"></script>
+</body>
+</html>
